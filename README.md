@@ -72,11 +72,7 @@ The blog system uses markdown files stored in the `content/` directory:
 
 ## Deployment
 
-The project builds to static files that can be deployed to any static hosting service:
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
+The project builds to static files that can be deployed to cloudflare
 
 ## Migration Notes
 

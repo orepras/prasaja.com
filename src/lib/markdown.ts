@@ -51,7 +51,7 @@ export async function getAllPosts(): Promise<Post[]> {
     console.log('Loading posts from markdown files...')
     
     // Use the correct glob pattern for Vite
-    const postsContext = import.meta.glob('/src/content/posts/*.md', { eager: true, as: 'raw' })
+    const postsContext = import.meta.glob('/src/content/posts/*.md', { eager: true, query: '?raw', import: 'default' })
     
     console.log('Posts context keys:', Object.keys(postsContext))
     console.log('Posts context entries:', Object.entries(postsContext))
@@ -131,7 +131,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
 export async function getAllProjects(): Promise<Project[]> {
   try {
     // Import all markdown files from the content/projects directory
-    const projectsContext = import.meta.glob('/src/content/projects/*.md', { eager: true, as: 'raw' })
+    const projectsContext = import.meta.glob('/src/content/projects/*.md', { eager: true, query: '?raw', import: 'default' })
     
     const projects = await Promise.all(
       Object.entries(projectsContext).map(async ([path, file]) => {
