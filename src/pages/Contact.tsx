@@ -144,7 +144,7 @@ export default function Contact() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">
-            Or reach out directly at{" "}
+            Or have a project that my agency can help you with? Reach out directly at{" "}
             <a 
               href="mailto:lets.talk@sintaksis.com" 
               className="text-primary hover:underline"
