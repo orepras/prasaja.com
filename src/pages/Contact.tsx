@@ -38,25 +38,25 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
-      <div className="mx-auto max-w-2xl">
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-6">
+      <div className="mx-auto max-w-4xl">
         <div className="mb-12 text-center">
-          <h1 className="text-3xl font-bold font-mono tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          <h1 className="text-3xl font-bold font-mono tracking-tight sm:text-4xl md:text-5xl mb-4">
             Get in Touch
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-sm leading-relaxed font-serif text-muted-foreground">
             Ready to work together? Let's discuss your project.
           </p>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle>Send me a message</CardTitle>
+            <CardTitle className="text-sm font-bold font-mono tracking-tight">Send me a message</CardTitle>
           </CardHeader>
           <CardContent>
             {submitStatus === "success" && (
               <div className="mb-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-md">
-                <p className="text-green-800 dark:text-green-200">
+                <p className="text-sm leading-relaxed font-serif text-green-800 dark:text-green-200">
                   Thank you for your message! I'll get back to you soon.
                 </p>
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
             
             {submitStatus === "error" && (
               <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-md">
-                <p className="text-red-800 dark:text-red-200">
+                <p className="text-sm leading-relaxed font-serif text-red-800 dark:text-red-200">
                   Sorry, there was an error sending your message. Please try again or contact me directly.
                 </p>
               </div>
@@ -143,24 +143,30 @@ export default function Contact() {
         </Card>
 
         <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-4">
-            Or have a project that my agency can help you with? Reach out directly at{" "}
-            <a 
-              href="mailto:lets.talk@sintaksis.com" 
-              className="text-primary hover:underline"
-            >
-              lets.talk@sintaksis.com
-            </a>
-          </p>
-          <Button variant="outline" asChild>
-            <a
-              href="https://cal.com/sintaksis/discovery"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Schedule a Discovery Call
-            </a>
-          </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-sm max-w-none font-serif text-justify">
+              <p className="text-sm leading-relaxed mb-4">
+                Or have a project that my agency can help you with? Reach out directly at{" "}
+                <a 
+                  href="mailto:lets.talk@sintaksis.com" 
+                  className="text-primary hover:underline"
+                >
+                  lets.talk@sintaksis.com
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="mt-6">
+            <Button variant="outline" asChild>
+              <a
+                href="https://cal.com/sintaksis/discovery"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule a Discovery Call
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
