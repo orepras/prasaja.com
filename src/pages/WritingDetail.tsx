@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, FileText, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getPostBySlug } from "@/lib/markdown";
+import { getPostBySlug, getAllPosts } from "@/lib/markdown";
 import { useEffect, useState } from "react";
 
 interface Post {
@@ -19,6 +19,7 @@ interface Post {
 export default function WritingDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [post, setPost] = useState<Post | null>(null);
+  const [recommendedPosts, setRecommendedPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -26,6 +27,14 @@ export default function WritingDetail() {
       if (slug) {
         const postData = await getPostBySlug(slug);
         setPost(postData);
+        
+        // Load recommended posts (excluding current post)
+        const allPosts = await getAllPosts();
+        const filteredPosts = allPosts.filter(p => p.slug !== slug);
+        
+        // Shuffle and take 3 random posts
+        const shuffled = filteredPosts.sort(() => 0.5 - Math.random());
+        setRecommendedPosts(shuffled.slice(0, 3));
       }
       setLoading(false);
     };
@@ -125,6 +134,54 @@ export default function WritingDetail() {
             dangerouslySetInnerHTML={{ __html: post.content }}
             aria-label={`Article content: ${post.title}`}
           />
+
+          {/* Recommended Writings Section */}
+          {recommendedPosts.length > 0 && (
+            <section className="mt-16 mb-8">
+              <h2 className="text-xl font-bold font-mono tracking-tight mb-4 text-center">
+                Read another one?
+              </h2>
+              
+              <div className="space-y-3">
+                {recommendedPosts.map((recommendedPost) => (
+                  <Link key={recommendedPost.slug} to={`/writing/${recommendedPost.slug}`} className="block">
+                    <div className="flex items-center justify-between py-2 px-3 border-b border-muted/10 hover:bg-muted/30 hover:scale-[1.02] transition-all duration-300 ease-in-out rounded-md group cursor-pointer">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <FileText className="h-3 w-3 text-primary group-hover:scale-110 transition-transform duration-300" />
+                          <span className="text-xs text-muted-foreground font-mono tracking-tight">
+                            {recommendedPost.category}
+                          </span>
+                        </div>
+                        <h3 className="text-sm font-medium font-mono tracking-tight mb-1 group-hover:text-primary transition-colors duration-300">
+                          {recommendedPost.title}
+                        </h3>
+                        <p className="text-xs text-muted-foreground font-serif group-hover:text-foreground/80 transition-colors duration-300">
+                          {recommendedPost.excerpt}
+                        </p>
+                      </div>
+                      <div className="flex items-center ml-3">
+                        <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
+                        <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
+                          visit link
+                          <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              
+              <div className="mt-4 text-center">
+                <Link 
+                  to="/writing" 
+                  className="text-primary hover:text-primary/80 font-mono tracking-tight text-xs underline"
+                >
+                  View all writings →
+                </Link>
+              </div>
+            </section>
+          )}
         </div>
       </div>
     </div>

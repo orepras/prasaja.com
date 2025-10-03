@@ -1,11 +1,4 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import {
-  Linkedin,
-  LucideGithub,
-  LucideX,
-} from "lucide-react";
-import NewsletterForm from "./NewsletterForm";
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-background" role="contentinfo">
