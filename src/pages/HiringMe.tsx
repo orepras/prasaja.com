@@ -241,7 +241,7 @@ This very website you're reading is a perfect example—built with modern tools,
                 to="/contact"
                 className="inline-flex items-center gap-2 px-4 py-2 text-primary rounded-md hover:text-primary-foreground transition-colors duration-300 text-sm font-mono tracking-tight"
               >
-                <ExternalLink className="h-4 w-4" />
+                <Mail className="h-4 w-4" />
                 Contact About Availability
               </Link>
             </div>
