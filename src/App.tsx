@@ -12,6 +12,7 @@ import WritingDetail from './pages/WritingDetail'
 import WritingGuidelines from './pages/WritingGuidelines'
 import WritingForm from './pages/WritingForm'
 import Accessibility from './pages/Accessibility'
+import HiringMe from './pages/HiringMe'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Route path="/writing-guidelines" element={<WritingGuidelines />} />
             <Route path="/writing-form" element={<WritingForm />} />
             <Route path="/accessibility" element={<Accessibility />} />
+            <Route path="/hiring-me" element={<HiringMe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
