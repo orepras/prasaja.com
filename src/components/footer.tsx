@@ -127,6 +127,18 @@ export default function Footer() {
               <span className="text-xs font-mono mr-2 mt-0.5">[10]</span>
               <div className="flex-1">
                 <p className="leading-relaxed">
+                  P. Mukti, "Terminologi Inklusif: Panduan penggunaan istilah yang lebih inklusif dalam bahasa Indonesia," 
+                  <em>Personal Resource</em>, 2025. [Online]. Available: 
+                  <Link to="/terminologi-inklusif" className="text-primary hover:underline">https://prasaja.com/terminologi-inklusif</Link>. 
+                  Last Accessed: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <span className="text-xs font-mono mr-2 mt-0.5">[11]</span>
+              <div className="flex-1">
+                <p className="leading-relaxed">
                   P. Mukti, "Email Correspondence: Direct communication for inquiries and collaboration," 
                   <em>Email Contact</em>, 2025. [Online]. Available: 
                   <a href="mailto:prasaja@hey.com" className="text-primary hover:underline">prasaja@hey.com</a>. 

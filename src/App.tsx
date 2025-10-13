@@ -14,6 +14,7 @@ import WritingForm from './pages/WritingForm'
 import Accessibility from './pages/Accessibility'
 import HiringMe from './pages/HiringMe'
 import ADPListMeetup from './pages/ADPListMeetup'
+import TerminologiInklusif from './pages/TerminologiInklusif'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
             <Route path="/accessibility" element={<Accessibility />} />
             <Route path="/hiring-me" element={<HiringMe />} />
             <Route path="/adplist-meetup" element={<ADPListMeetup />} />
+            <Route path="/terminologi-inklusif" element={<TerminologiInklusif />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
