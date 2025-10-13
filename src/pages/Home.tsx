@@ -56,7 +56,7 @@ export default function Home() {
       <header className="mt-36 mb-12">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold font-mono tracking-tight mb-4">
-            Writer-grade clarity.<br></br>Developer-grade precision.
+            Syntax, Meet Semantics.
           </h1>
           <div className="text-base text-muted-foreground font-mono tracking-tight mb-8">
           </div>
@@ -196,7 +196,7 @@ From Words to Code
                 <div className="flex items-center ml-3">
                   <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
                   <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
-                    visit link
+                   read this one
                     <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </div>
                 </div>
@@ -268,7 +268,7 @@ From Words to Code
               <div className="flex items-center ml-3">
                 <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
                 <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
-                  visit link
+                  try this builder
                   <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                 </div>
               </div>
@@ -293,7 +293,7 @@ From Words to Code
               <div className="flex items-center ml-3">
                 <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
                 <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
-                  visit link
+                  try create a form
                   <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                 </div>
               </div>
@@ -352,7 +352,7 @@ From Words to Code
                 <div className="flex items-center ml-3">
                   <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
                   <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
-                    visit link
+                    read project
                     <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </div>
                 </div>
