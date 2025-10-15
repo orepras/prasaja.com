@@ -42,55 +42,26 @@ export default function TerminologiInklusif() {
             </tr>
           </thead>
           <tbody>
+            {/* Terminologi yang paling sering digunakan */}
             <tr>
               <td className="border border-muted p-4">Orang cacat</td>
-              <td className="border border-muted p-4 font-medium">Penyandang disabilitas</td>
+              <td className="border border-muted p-4 font-medium">Individu dengan disabilitas</td>
               <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari label yang menstigma (seolah "rusak"). Gunakan istilah netral yang diakui luas dan diatur dalam UU.</td>
             </tr>
             <tr>
-              <td className="border border-muted p-4">Kaum marjinal / Kaum terpinggirkan</td>
-              <td className="border border-muted p-4 font-medium">Kelompok masyarakat dengan akses terbatas / Bagian masyarakat yang belum terakomodasi</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Geser fokus dari "kesalahan individu" ke hambatan sistemik (lingkungan, kebijakan, layanan).</td>
-            </tr>
-            <tr>
-              <td className="border border-muted p-4">Tuna netra / Tuna rungu / Tuna daksa</td>
-              <td className="border border-muted p-4 font-medium">Netra, Tuli, disabilitas fisik</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Banyak komunitas lebih nyaman dengan bentuk ini; terasa setara dan humanis. Cocok di komunikasi publik dan komunitas.</td>
-            </tr>
-            <tr>
               <td className="border border-muted p-4">Penderita disabilitas</td>
-              <td className="border border-muted p-4 font-medium">Orang dengan disabilitas</td>
+              <td className="border border-muted p-4 font-medium">Individu dengan disabilitas</td>
               <td className="border border-muted p-4 text-sm text-muted-foreground">"Penderita" mengesankan derita permanen. "Dengan" bersifat deskriptif, tidak mengasihani.</td>
             </tr>
             <tr>
               <td className="border border-muted p-4">Difabel</td>
-              <td className="border border-muted p-4 font-medium">Penyandang disabilitas</td>
+              <td className="border border-muted p-4 font-medium">Individu dengan disabilitas</td>
               <td className="border border-muted p-4 text-sm text-muted-foreground">Meski populer, kadang terlalu eufemistis/ambigu. "Disabilitas" lebih konsisten di ranah kebijakan dan layanan.</td>
             </tr>
             <tr>
-              <td className="border border-muted p-4">Kaum lemah / Golongan tidak berdaya</td>
-              <td className="border border-muted p-4 font-medium">Masyarakat dengan kebutuhan aksesibilitas</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari diksi yang melemahkan. Fokus pada kebutuhan akses, dukungan, dan akomodasi yang layak.</td>
-            </tr>
-            <tr>
-              <td className="border border-muted p-4">Korban disabilitas</td>
-              <td className="border border-muted p-4 font-medium">Penyandang disabilitas akibat … (mis. kecelakaan kerja)</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Gunakan "korban" hanya bila merujuk pada kejadian spesifik. Untuk identitas sehari-hari, pakai istilah netral.</td>
-            </tr>
-            <tr>
-              <td className="border border-muted p-4">Ramah difabel</td>
-              <td className="border border-muted p-4 font-medium">Aksesibel</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">"Ramah" = niat; "aksesibel" = dapat diuji/diukur (gedung aksesibel, situs aksesibel, proses rekrutmen aksesibel).</td>
-            </tr>
-            <tr>
-              <td className="border border-muted p-4">Pejuang disabilitas</td>
-              <td className="border border-muted p-4 font-medium">Aktivis disabilitas / Advokat inklusi</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari glorifikasi berlebihan. Tekankan peran, kompetensi, dan kontribusi profesional.</td>
-            </tr>
-            <tr>
-              <td className="border border-muted p-4">Kaum istimewa</td>
-              <td className="border border-muted p-4 font-medium">Penyandang disabilitas</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">"Istimewa" bisa jadi toxic positivity yang memisahkan. Pilih istilah yang menyertakan, bukan mengistimewakan.</td>
+              <td className="border border-muted p-4">Anak berkebutuhan khusus (ABK)</td>
+              <td className="border border-muted p-4 font-medium">Anak dengan disabilitas</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">"Berkebutuhan khusus" terlalu luas dan sering menutupi konteks disabilitas. Gunakan istilah "anak dengan disabilitas" bila memang merujuk pada kondisi disabilitas yang diakui dalam konteks pendidikan inklusif.</td>
             </tr>
             <tr>
               <td className="border border-muted p-4">Normal / Tidak normal</td>
@@ -98,19 +69,74 @@ export default function TerminologiInklusif() {
               <td className="border border-muted p-4 text-sm text-muted-foreground">Jangan gunakan "normal" sebagai pembanding. Pilih istilah deskriptif yang tidak menghakimi.</td>
             </tr>
             <tr>
+              <td className="border border-muted p-4">Tuna netra / Tuna rungu / Tuna daksa</td>
+              <td className="border border-muted p-4 font-medium">Netra, Tuli, disabilitas fisik</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Banyak komunitas lebih nyaman dengan bentuk ini; terasa setara dan humanis. Cocok di komunikasi publik dan komunitas.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Ramah difabel</td>
+              <td className="border border-muted p-4 font-medium">Aksesibel</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">"Ramah" = niat; "aksesibel" = dapat diuji/diukur (gedung aksesibel, situs aksesibel, proses rekrutmen aksesibel).</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Lumpuh dengan kursi roda</td>
+              <td className="border border-muted p-4 font-medium">Pengguna kursi roda</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Kursi roda adalah alat mobilitas/kemerdekaan; jangan bingkai sebagai kelemahan.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Kaum minoritas</td>
+              <td className="border border-muted p-4 font-medium">Kelompok minoritas / kelompok rentan</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari "kaum" yang memberi jarak. "Kelompok" terasa lebih inklusif dan netral.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Kaum marjinal / Kaum terpinggirkan</td>
+              <td className="border border-muted p-4 font-medium">Kelompok masyarakat dengan akses terbatas / Bagian masyarakat yang belum terakomodasi</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Geser fokus dari "kesalahan individu" ke hambatan sistemik (lingkungan, kebijakan, layanan).</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Kaum lemah / Golongan tidak berdaya</td>
+              <td className="border border-muted p-4 font-medium">Masyarakat dengan kebutuhan aksesibilitas</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari diksi yang melemahkan. Fokus pada kebutuhan akses, dukungan, dan akomodasi yang layak.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Kaum istimewa</td>
+              <td className="border border-muted p-4 font-medium">Penyandang disabilitas</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">"Istimewa" bisa jadi toxic positivity yang memisahkan. Pilih istilah yang menyertakan, bukan mengistimewakan.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Korban disabilitas</td>
+              <td className="border border-muted p-4 font-medium">Penyandang disabilitas akibat … (mis. kecelakaan kerja)</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Gunakan "korban" hanya bila merujuk pada kejadian spesifik. Untuk identitas sehari-hari, pakai istilah netral.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Pejuang disabilitas</td>
+              <td className="border border-muted p-4 font-medium">Aktivis disabilitas / Advokat inklusi</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Hindari glorifikasi berlebihan. Tekankan peran, kompetensi, dan kontribusi profesional.</td>
+            </tr>
+            <tr>
               <td className="border border-muted p-4">Keterbatasan pribadi</td>
               <td className="border border-muted p-4 font-medium">Hambatan lingkungan/sistem</td>
               <td className="border border-muted p-4 text-sm text-muted-foreground">Dalam framing kebijakan/produk, sorot barrier eksternal (akses fisik, informasi, sikap, teknologi) daripada "kekurangan" individu.</td>
             </tr>
             <tr>
-              <td className="border border-muted p-4">Kursi roda sebagai simbol ketidakmampuan</td>
-              <td className="border border-muted p-4 font-medium">Pengguna kursi roda</td>
-              <td className="border border-muted p-4 text-sm text-muted-foreground">Kursi roda adalah alat mobilitas/kemerdekaan; jangan bingkai sebagai kelemahan.</td>
-            </tr>
-            <tr>
               <td className="border border-muted p-4">Kelainan</td>
               <td className="border border-muted p-4 font-medium">Variasi fungsi / kondisi (sesuai konteks medis)</td>
               <td className="border border-muted p-4 text-sm text-muted-foreground">Di ranah medis tetap presisi, namun di ranah publik pilih bahasa non-stigmatis yang menghormati identitas.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Idiot / Bodoh</td>
+              <td className="border border-muted p-4 font-medium">Kesulitan belajar / Keterbatasan kognitif</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Istilah "idiot" dan "bodoh" sangat menstigma. Fokus pada deskripsi fungsional yang tidak menghakimi kemampuan intelektual seseorang.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Gila / Tidak waras</td>
+              <td className="border border-muted p-4 font-medium">Orang dengan kondisi kesehatan mental</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Istilah "gila" dan "tidak waras" sangat merendahkan. Gunakan bahasa yang menghormati dan mengakui bahwa kesehatan mental adalah bagian dari kesehatan secara keseluruhan.</td>
+            </tr>
+            <tr>
+              <td className="border border-muted p-4">Autis (sebagai kata sifat negatif)</td>
+              <td className="border border-muted p-4 font-medium">Neurodivergen / Orang dengan autisme</td>
+              <td className="border border-muted p-4 text-sm text-muted-foreground">Autisme bukanlah kata sifat untuk menggambarkan perilaku yang dianggap aneh. Gunakan istilah yang menghormati identitas dan pengalaman neurodivergen.</td>
             </tr>
           </tbody>
         </table>

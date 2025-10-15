@@ -93,13 +93,13 @@ export default function Home() {
           </div>
           <div className="prose prose-sm max-w-none font-serif text-justify">
             <p className="text-sm leading-relaxed mb-4">
-              <strong>This personal website explores the evolving landscape of modern content creation, arguing that writers who embrace 
-              technology and understand both the craft of writing and the mechanics of digital systems can achieve 
+              <strong>This personal website explores the evolving landscape of modern writing in digital products, arguing that writers who embrace 
+              technology and understand both the craft of writing, accessibilities, and the mechanics of digital systems can achieve 
               unprecedented success in today's market. Traditional copywriting approaches, while valuable, often 
               fall short in an era where content must seamlessly integrate with complex digital ecosystems.</strong>
             </p>
             <p className="text-sm leading-relaxed mb-4">
-              Through my work as a <i>full-stack writer</i> and founder of Sintaksis (copywriting and storytelling agency) I 
+              Through my work as a <i>full-stack writer</i> and founder of <a href="https://sintaksis.com" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Sintaksis (copywriting and storytelling agency)</a> I 
               demonstrate how writers can bridge the gap between human creativity and technological precision. This 
               hybrid approach enables the creation of content that not only resonates with audiences but also 
               functions effectively within modern digital frameworks, from UX interfaces to technical documentation.
@@ -108,7 +108,7 @@ export default function Home() {
               My methodology combines traditional writing expertise with technical understanding, allowing for 
               content strategies that are both emotionally compelling and technically sound. This approach has 
               proven effective across various industries, from fintech to e-commerce, where content must serve 
-              both user needs and business objectives while maintaining technical feasibility.
+              both user needs and business objectives while maintaining accessibility and technical feasibility.
             </p>
             <p className="text-sm leading-relaxed mb-6">
               For those seeking to understand my methodology in depth, I invite you to explore my detailed 
@@ -119,8 +119,8 @@ export default function Home() {
           
           <div className="text-center space-y-2">
             <p className="text-xs font-mono tracking-tight text-muted-foreground">
-              <Link to="/writing" className="text-primary hover:underline">Read my essays</Link> • 
-              <Link to="/contact" className="text-primary hover:underline ml-1">Book a consultation</Link>
+              <Link to="/writing" className="text-primary underline hover:underline">Read my essays</Link> • 
+              <Link to="/contact" className="text-primary underline hover:underline ml-1">Book a consultation</Link>
             </p>
           </div>
         </div>
@@ -137,7 +137,7 @@ From Words to Code
             <p className="text-sm leading-relaxed font-serif">
               My journey began with pure curiosity about words, technology, and how the two 
               can shape the way we experience the world. What started as fascination with language evolved into a 
-              deep understanding of how content and code intersect in modern digital products.
+              deep understanding of how content and code intersect in modern digital products to make accessible and user-friendly products.
             </p>
             <p className="text-sm leading-relaxed font-serif">
               As a <span className="text-primary font-medium">UX Writer</span>, I discovered that the right words at the right moment could 
@@ -158,12 +158,11 @@ From Words to Code
             </p>
             <p className="text-sm leading-relaxed font-serif">
               When you understand both the technical constraints and the user needs, 
-              you can create solutions that are both elegant and functional. Now as a <span className="text-primary font-medium">Principal  Writer—Content Developer hybrid</span>, I bridge the gap 
+              you can create solutions that are both elegant and functional. Now as a <span className="text-primary font-medium">Principal  Writer—Content Developer hybrid</span> that also care about accessibility, I bridge the gap 
               between words and execution, between what users truly need and what technology can deliver.
             </p>
             <p className="text-sm leading-relaxed font-serif">
-              This unique perspective allows me to create content that doesn't just inform users, but guides them through experiences 
-              that feel intuitive, human, and purposeful.
+              This unique perspective allows me to create content that are not only intuitive, human, and purposeful, but also accessible.
             </p>
           </div>
         </div>
@@ -196,7 +195,7 @@ From Words to Code
                 <div className="flex items-center ml-3">
                   <div className="flex-1 border-t border-dotted border-muted mx-2 group-hover:border-primary/50 transition-colors duration-300"></div>
                   <div className="text-primary group-hover:text-primary/80 font-mono tracking-tight text-xs flex items-center gap-1 transition-all duration-300">
-                   read this one
+                   read the writing
                     <ExternalLink className="h-2 w-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </div>
                 </div>
