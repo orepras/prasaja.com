@@ -1,5 +1,5 @@
 ---
-title: The AI Content Mill
+title: 🤖 The AI Content Mill
 date: 2025-08-13
 category: ux-writing
 excerpt: Dramatic opening hook, numbered list of shallow observations, buzzword-heavy conclusions that sound profound but say nothing. What do you expect from this?
