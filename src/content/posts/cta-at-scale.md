@@ -1,5 +1,5 @@
 ---
-title: Writing CTAs at Scale
+title: ✍🏽 Writing CTAs at Scale
 date: 2025-08-14
 category: ux-writing
 excerpt: What makes a good CTA? It depends on sooo many aspects. But here's my attempt to boil down into several points.

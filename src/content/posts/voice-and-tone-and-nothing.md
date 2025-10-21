@@ -1,5 +1,5 @@
 ---
-title: Have We Nothing Else to Talk About but Voice and Tone?
+title: 🔁 Have We Nothing Else to Talk About but Voice and Tone?
 date: 2025-09-14
 category: ux-writing
 excerpt: Voice and tone are the easiest parts of our job to explain and defend. But is it the only thing we discuss over and over again?

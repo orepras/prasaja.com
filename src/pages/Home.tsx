@@ -94,7 +94,7 @@ export default function Home() {
           <div className="prose prose-sm max-w-none font-serif text-justify">
             <p className="text-sm leading-relaxed mb-4">
               <strong>This personal website explores the evolving landscape of modern writing in digital products, arguing that writers who embrace 
-              technology and understand both the craft of writing, accessibilities, and the mechanics of digital systems can achieve 
+              technology and understand the craft of writing, accessibility, and the mechanics of digital systems can achieve 
               unprecedented success in today's market. Traditional copywriting approaches, while valuable, often 
               fall short in an era where content must seamlessly integrate with complex digital ecosystems.</strong>
             </p>

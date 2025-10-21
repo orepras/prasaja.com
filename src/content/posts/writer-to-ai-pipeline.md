@@ -1,5 +1,5 @@
 ---
-title: Beyond the Panic, Writer to AI Pipeline
+title: 🤖 Beyond the Panic, Writer to AI Pipeline
 date: 2025-09-26
 category: ux-writing
 excerpt: The future of content design isn't about humans versus AI, I believe it's about humans with AI creating experiences that neither could achieve alone.

@@ -1,5 +1,5 @@
 ---
-title: Whose Language Are We Designing For?
+title: 🌐 Whose Language Are We Designing For?
 date: 2025-09-15
 category: ux-writing
 excerpt: If Indonesian products are built for Indonesian users, then why is English-first approval step still prioritized at the head of the table making final decisions about copy quality?
