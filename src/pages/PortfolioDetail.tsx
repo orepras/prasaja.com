@@ -80,7 +80,7 @@ export default function PortfolioDetail() {
 
           {/* Project Header */}
           <header className="mb-12">
-            <h1 className="text-4xl font-bold font-mono leading-tight mb-6 sm:text-5xl md:text-6xl">
+            <h1 className="text-3xl md:text-4xl font-bold font-mono leading-tight mb-6">
               {project.title}
             </h1>
             
@@ -90,7 +90,7 @@ export default function PortfolioDetail() {
               </span>
             </div>
 
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-sm text-muted-foreground mb-8">
               {project.description}
             </p>
           </header>

@@ -28,10 +28,10 @@ export default function Portfolio() {
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
       <div className="mx-auto max-w-4xl">
         <div className="mb-12 text-center">
-          <h1 className="text-3xl font-bold font-mono tracking-tighter sm:text-4xl md:text-5xl mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold font-mono tracking-tight mb-4">
             Portfolio
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             A collection of my work in UX writing and product development.
           </p>
         </div>

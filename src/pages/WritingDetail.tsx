@@ -92,7 +92,7 @@ export default function WritingDetail() {
 
           {/* Article Header */}
           <header className="mb-12">
-            <h1 className="text-4xl font-bold font-mono leading-tight mb-6 sm:text-5xl md:text-6xl">
+            <h1 className="text-3xl md:text-4xl font-bold font-mono leading-tight mb-6">
               {post.title}
             </h1>
             

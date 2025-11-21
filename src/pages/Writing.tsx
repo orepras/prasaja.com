@@ -70,7 +70,7 @@ export default function Writing() {
     <div className="max-w-6xl mx-auto px-4 md:px-6 py-6">
       <div className="mx-auto max-w-4xl">
         <div className="mb-12 space-y-4 text-center">
-          <h1 className="text-3xl font-bold font-mono tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="text-3xl md:text-4xl font-bold font-mono tracking-tight">
             Writings
           </h1>
           <p className="mx-auto text-sm leading-relaxed font-serif max-w-[700px] text-muted-foreground">
