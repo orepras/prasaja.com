@@ -99,7 +99,7 @@ export default function Home() {
               fall short in an era where content must seamlessly integrate with complex digital ecosystems.</strong>
             </p>
             <p className="text-sm leading-relaxed mb-4">
-              Through my work as a <i>full-stack writer</i> and founder of <a href="https://sintaksis.com" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Sintaksis (copywriting and storytelling agency)</a> I 
+              Through my work as a <i>content developer</i> and head storyteller of <a href="https://sintaksis.com" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Sintaksis (copywriting and storytelling agency)</a> I 
               demonstrate how writers can bridge the gap between human creativity and technological precision. This 
               hybrid approach enables the creation of content that not only resonates with audiences but also 
               functions effectively within modern digital frameworks, from UX interfaces to technical documentation.
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
           
           <div className="text-center space-y-2">
-            <p className="text-xs font-mono tracking-tight text-muted-foreground">
+            <p className="cta-text font-mono tracking-tight text-muted-foreground">
               <Link to="/writing" className="text-primary underline hover:underline">Read my essays</Link> • 
               <Link to="/contact" className="text-primary underline hover:underline ml-1">Book a consultation</Link>
             </p>
@@ -140,25 +140,24 @@ From Words to Code
               deep understanding of how content and code intersect in modern digital products to make accessible and user-friendly products.
             </p>
             <p className="text-sm leading-relaxed font-serif">
-              As a <span className="text-primary font-medium">UX Writer</span>, I discovered that the right words at the right moment could 
+              I discovered that the right words at the right moment could 
               transform a confusing interface into an intuitive experience. I've written microcopy that guides, reassures, 
               and makes people smile (or at least give that little nose-exhale).
             </p>
             <p className="text-sm leading-relaxed font-serif">
-              Because digital experiences should feel human, not robotic. Every button label, every error message, every onboarding step is an opportunity to 
-              connect with users on a human level.
+              Every button label, every error message, every onboarding step is an opportunity to connect with users on a human level.
             </p>
           </div>
           
           <div className="space-y-4">
             <p className="text-sm leading-relaxed font-serif">
               But I wanted to do more than write about products; I wanted to build something that helps me and clients. 
-              Learning to code wasn't just about adding another skill—it was about understanding how content lives inside 
+              Learning to code and adding another skill makes me a better writer that also understand how content lives inside 
               a product and how to make it shine.
             </p>
             <p className="text-sm leading-relaxed font-serif">
               When you understand both the technical constraints and the user needs, 
-              you can create solutions that are both elegant and functional. Now as a <span className="text-primary font-medium">Principal  Writer—Content Developer hybrid</span> that also care about accessibility, I bridge the gap 
+              you can create solutions that are both elegant and functional. Now as a <span className="text-primary font-medium">Writer-Content Developer</span> that also care about accessibility, I bridge the gap 
               between words and execution, between what users truly need and what technology can deliver.
             </p>
             <p className="text-sm leading-relaxed font-serif">
@@ -207,7 +206,7 @@ From Words to Code
         <div className="mt-4 text-center">
           <Link 
             to="/writing" 
-            className="text-primary hover:text-primary/80 font-mono tracking-tight text-xs underline"
+            className="cta-text text-primary hover:text-primary/80 font-mono tracking-tight underline"
           >
             View all writings →
           </Link>
@@ -223,26 +222,26 @@ From Words to Code
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-justify">
           <div className="space-y-4">
             <p className="text-sm leading-relaxed font-serif">
-              I've built these tools to solve real problems I've encountered throughout my career as a writer, content developer, and agency owner. 
-              Each tool addresses a specific pain point that I've seen countless teams struggle with—from maintaining consistent brand voice 
-              across multiple touchpoints to streamlining the often chaotic process of content collaboration.
+              I've built these tools to solve real problems throughout my career as a writer and content developer, and head storyteller of Sintaksis. 
+              Each tool addresses a specific pain point that I've seen countless teams struggle with like maintaining consistent brand voice 
+              across multiple touchpoints and streamlining the often chaotic process of content collaboration.
             </p>
             <p className="text-sm leading-relaxed font-serif">
-              The challenges are universal How do you keep your brand voice consistent when multiple writers are involved? How do you 
-              communicate complex content requirements without endless email threads? How do you ensure that technical constraints are 
-              considered from the beginning of the content creation process?
+              The challenges are universal like how do you keep your brand voice consistent when multiple writers are involved? How do you 
+              communicate complex content requirements without endless email threads, or how do you ensure that technical constraints are 
+              considered from the beginning of the content creation process? These are the problems that I've solved with these tools.
             </p>
           </div>
           
           <div className="space-y-4">
             <p className="text-sm leading-relaxed font-serif">
               These tools represent my approach to bridging the gap between traditional content creation and modern digital workflows. 
-              They're not just utilities—they're embodiments of the methodology I've developed over years of working with teams, 
+              They are embodiments of the methodology I've developed over years of working with teams like startups and enterprise clients, 
               from startups to enterprise clients.
             </p>
             <p className="text-sm leading-relaxed font-serif">
               Feel free to use them for your projects too—they're designed to be practical, not just pretty. Each tool has been 
-              battle-tested in real-world scenarios and refined based on actual feedback (and critiques!). They're free to use because I believe 
+              battle-tested in real-world scenarios and refined based on actual feedback (and critiques!). They are free to use because I believe 
               good tools should be accessible to everyone who needs them.
             </p>
           </div>
@@ -323,14 +322,14 @@ From Words to Code
           
           <div className="space-y-4">
             <p className="text-sm leading-relaxed font-serif">
-              These aren't just portfolio pieces, they're documented methodologies that show how strategic content 
+              These are portfolio pieces and documented methodologies that show how strategic content 
               and thoughtful design can transform user experiences. From reducing user confusion in complex workflows 
               to increasing conversion rates through better microcopy, each project represents a measurable impact 
               on both user satisfaction and business outcomes.
             </p>
             <p className="text-sm leading-relaxed font-serif">
               The process behind each project involved extensive user research, stakeholder alignment, and iterative 
-              testing. You'll see how I approach problems from multiple angles, considering both the emotional journey 
+              testing. You'll see how I approach problems from multiple angles like considering both the emotional journey 
               of users and the technical constraints of development teams.
             </p>
           </div>
@@ -363,7 +362,7 @@ From Words to Code
         <div className="mt-4 text-center">
           <Link 
             to="/portfolio" 
-            className="text-primary hover:text-primary/80 font-mono tracking-tight text-xs underline"
+            className="cta-text text-primary hover:text-primary/80 font-mono tracking-tight underline"
           >
             View all projects →
           </Link>
@@ -406,16 +405,16 @@ From Words to Code
               enjoy reading, I will help you bridge the gap between what your product can do and what users actually experience.
             </p>
             <p className="text-sm leading-relaxed font-serif">
-              The difference between a good product and a great one often lies in the moments when users feel 
+              Good products often lies in the moments when users feel 
               understood, guided, and empowered. This is where my expertise transforms your vision into reality. 
-              Ready to see what's possible when words and technology work in a harmony?<br></br>
+              Ready to see what's possible when words and technology work in a harmony? &nbsp;
               <a
                 href="https://cal.com/sintaksis/discovery"
                 className="text-primary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                Let's explore together.
+              > 
+                Let's explore collaboration together.
               </a>
             </p>
           </div>

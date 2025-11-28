@@ -57,6 +57,9 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontSize: {
+        'body': ['clamp(1rem, 2.5vw + 0.5rem, 1.25rem)', { lineHeight: '1.7' }],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -56,6 +56,30 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Literata', serif;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem); /* Responsive base font size: 16px to 20px */
+  }
+  
+  /* Global body text styling with cohesive clamp() sizing */
+  p {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    line-height: 1.7;
+  }
+  
+  /* Ensure font-serif paragraphs use the same sizing */
+  p.font-serif {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    line-height: 1.7;
+  }
+  
+  /* List items */
+  li {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    line-height: 1.6;
+  }
+  
+  /* Div elements with font-serif should inherit body text sizing */
+  div.font-serif {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
   }
   
   /* Global hyperlink styling - exclude buttons */
@@ -95,7 +119,7 @@
     line-height: 1.7;
     color: hsl(var(--foreground));
     max-width: none;
-    font-size: 0.875rem; /* text-sm - matches home page body text */
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem); /* Responsive font size: 16px to 20px */
   }
   
   .prose-enhanced h1 {
@@ -123,21 +147,25 @@
   }
   
   .prose-enhanced p {
-    @apply mb-4 text-sm;
+    @apply mb-4;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
     line-height: 1.7;
   }
   
   .prose-enhanced ul, .prose-enhanced ol {
-    @apply mb-4 pl-6 text-sm;
+    @apply mb-4 pl-6;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
   }
   
   .prose-enhanced li {
-    @apply mb-2 text-sm;
+    @apply mb-2;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
     line-height: 1.6;
   }
   
   .prose-enhanced blockquote {
-    @apply border-l-4 border-primary pl-6 my-6 italic text-sm;
+    @apply border-l-4 border-primary pl-6 my-6 italic;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
     font-style: italic;
     line-height: 1.6;
   }
@@ -193,14 +221,107 @@
   }
   
   .prose-enhanced th, .prose-enhanced td {
-    @apply border border-border px-4 py-2 text-left text-sm;
+    @apply border border-border px-4 py-2 text-left;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
   }
   
   .prose-enhanced th {
-    @apply bg-muted font-semibold text-sm;
+    @apply bg-muted font-semibold;
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
   }
   
   .prose-enhanced hr {
     @apply border-border my-8;
+  }
+}
+
+/* Global body text styling - applies to all body content across the site */
+/* Using higher specificity to override Tailwind's text-sm utility */
+@layer utilities {
+  /* Override text-sm for body content paragraphs to use clamp() - high specificity */
+  p.font-serif.text-sm,
+  p.text-sm.font-serif,
+  p.leading-relaxed.text-sm.font-serif,
+  p.text-sm.leading-relaxed.font-serif {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Body text paragraphs with leading-relaxed */
+  p.leading-relaxed.font-serif {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* List items with font-serif and text-sm */
+  li.font-serif.text-sm,
+  li.text-sm.font-serif,
+  li.leading-relaxed.font-serif.text-sm {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Div elements with prose classes - these contain body content */
+  div.prose,
+  div.prose-sm,
+  div.prose.font-serif,
+  div.prose-sm.font-serif,
+  .prose,
+  .prose-sm {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Override prose-sm specifically - it sets smaller font sizes on body content */
+  .prose-sm p,
+  .prose-sm li,
+  .prose-sm div:not([class*="text-"]):not([class*="font-"]),
+  div.prose-sm p,
+  div.prose-sm li,
+  div.prose-sm > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Ensure prose containers with font-serif use clamp() for body content */
+  .prose.font-serif p,
+  .prose.font-serif li,
+  .prose-sm.font-serif p,
+  .prose-sm.font-serif li,
+  div.prose.font-serif p,
+  div.prose.font-serif li,
+  div.prose-sm.font-serif p,
+  div.prose-sm.font-serif li {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Div elements with text-base that should use body text sizing */
+  div.text-base.font-serif,
+  div.font-serif.text-base {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Div elements with text-sm and font-serif */
+  div.text-sm.font-serif,
+  div.font-serif.text-sm {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Any div containing body text with leading-relaxed */
+  div.leading-relaxed.font-serif,
+  div.font-serif.leading-relaxed {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem) !important;
+  }
+  
+  /* Utility class for consistent body text */
+  .body-text {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem);
+    line-height: 1.7;
+  }
+  
+  /* Call-to-action text - slightly smaller than body but still cohesive */
+  .cta-text {
+    font-size: clamp(0.875rem, 2vw + 0.5rem, 1.125rem);
+  }
+  
+  /* Font-mono elements that should use body text sizing */
+  p.font-mono:not(.text-xs):not(.text-sm),
+  div.font-mono:not(.text-xs):not(.text-sm) {
+    font-size: clamp(0.875rem, 2vw + 0.5rem, 1.125rem);
   }
 }
