@@ -15,6 +15,7 @@ import Accessibility from './pages/Accessibility'
 import HiringMe from './pages/HiringMe'
 import ADPListMeetup from './pages/ADPListMeetup'
 import TerminologiInklusif from './pages/TerminologiInklusif'
+import WritingRelatedWCAG from './pages/WritingRelatedWCAG'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
             <Route path="/hiring-me" element={<HiringMe />} />
             <Route path="/adplist-meetup" element={<ADPListMeetup />} />
             <Route path="/terminologi-inklusif" element={<TerminologiInklusif />} />
+            <Route path="/writing-related-wcag" element={<WritingRelatedWCAG />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

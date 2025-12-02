@@ -71,10 +71,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* Right Column */}
-          <div className="space-y-4">
             <div className="flex items-start">
               <span className="text-xs font-mono mr-2 mt-0.5">[6]</span>
               <div className="flex-1">
@@ -86,6 +83,10 @@ export default function Footer() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-4">
 
             <div className="flex items-start">
               <span className="text-xs font-mono mr-2 mt-0.5">[7]</span>
@@ -142,6 +143,18 @@ export default function Footer() {
                   P. Mukti, "Email Correspondence: Direct communication for inquiries and collaboration," 
                   <em>Email Contact</em>, 2025. [Online]. Available: 
                   <a href="mailto:prasaja@hey.com" className="text-primary hover:underline">prasaja@hey.com</a>. 
+                  Last Accessed: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <span className="text-xs font-mono mr-2 mt-0.5">[12]</span>
+              <div className="flex-1">
+                <p className="leading-relaxed">
+                  P. Mukti, "WCAG Criteria for Writers: A curated guide to writing-related accessibility standards," 
+                  <em>Personal Resource</em>, 2025. [Online]. Available: 
+                  <Link to="/writing-related-wcag" className="text-primary hover:underline">https://prasaja.com/writing-related-wcag</Link>. 
                   Last Accessed: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}.
                 </p>
               </div>
